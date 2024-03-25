@@ -1,0 +1,183 @@
+body {
+    background-image: url('images/bg-intro-desktop.png');
+    background-color: #FF7979;
+    font-family: 'Poppins';
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+}
+
+main {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+
+h1 {
+    font-size: clamp(1.75rem, 1.2658rem + 2.0657vw, 3.125rem);
+    color: white;
+
+}
+
+.content {
+    max-width: 525px;
+    align-self: center;
+
+}
+
+.content p {
+    color: white;
+    font-size: 16px;
+}
+
+
+form {
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 1rem;
+}
+
+
+.trial p {
+    border-radius: 7px;
+    padding: 1rem clamp(3rem, 2rem + 5vw, 8rem);
+    color: white;
+    background: #5E54A4;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.price {
+    font-weight: lighter;
+
+}
+
+.inputs {
+    border-radius: 8px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem;
+  
+
+}
+.inputs .input-control{
+    width: 100%;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+::placeholder {
+    color: hsl(0, 3%, 58%);
+    font-weight: Bold;
+    font-size: 11px;
+    font-family: 'poppins';
+}
+
+.input-control.error input {
+    background: url('images/icon-error.svg') no-repeat 95%;
+    border: 2px solid #FF7979;
+}
+.error{
+    font-style: italic;
+    font-size: 11px;
+    color: #FF7979;
+    align-self: end;
+   
+}
+.input-control.success input{
+    border: none;
+    border: 1px solid #DEDEDE;
+}
+
+
+/* add this class in the input whenever it is empty or not formatted correctly   
+.error{
+    background: url('images/icon-error.svg') no-repeat 95%;
+    border:2px solid #FF7979; 
+}
+*/
+
+input {
+    border: none;
+    border: 1px solid #DEDEDE;
+    padding: 1em 0 1em 1.5em;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    background: #38CC8B;
+    padding: 0.7rem clamp(3rem, 2rem + 5vw, 8rem);
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    filter: drop-shadow(0px 2px green);
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #77E2B3;
+}
+
+.terms {
+    color: #DEDEDE;
+    font-weight: mixed;
+    font-size: 11px;
+    max-width: 367px;
+}
+
+.terms span {
+    color: #FF7979;
+
+}
+
+@media only screen and (max-width:1155px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .trial p {
+
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (max-width:426px) {
+
+
+    .trial p {
+
+        text-align: center;
+    }
+
+
+
+    .terms {
+        max-width: 249px;
+        text-align: center;
+    }
+}
+
